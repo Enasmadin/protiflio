@@ -1,0 +1,89 @@
+.navbar{
+    max-height: 100vh;
+    height: 100vh;
+    width:300px;
+    background: #040b14 !important;
+    display: flex !important;
+    align-items: start !important;
+    
+   
+    }
+   
+   @media (min-width: 992px){
+       .navbar-expand-lg {
+        flex-wrap: wrap !important; 
+      }
+   }
+   .bg-body-tertiary {
+       background: #040b14 !important;
+   }  
+   
+   .navbar .image{
+       width: 150px;
+       height: 150px;
+   }
+   
+   .navbar .image img{
+       width:100%;
+       height: 100%; 
+       border-radius: 50% !important;
+       border: 8px solid #2c2f3f;
+   }
+   .navbar .name p{
+       color: white ;
+       font-weight: bold;
+       font-size: 24px;
+       margin: 10px 0 5px;
+   }
+   .social-media a{
+      /* color: white !important; */
+       text-decoration: none !important; 
+       
+   }
+   
+   .linkedIn-icon , .github-icon{
+       color: white;
+       /* background-color: white ; */
+   }
+   .social-media{
+       display: flex;
+   }
+   .social-media a{
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+   }
+   
+   .social-media a:hover{
+       background: #149ddd;
+       color: #fff;
+   }
+   .links .link-one{
+    text-decoration: none !important;
+    color: white;
+   }
+   /* .active{
+    color:#149ddd;
+   } */
+   .active  {
+    color:#149ddd !important;
+   }
+   .links ul li {
+    margin-bottom: 10px;
+   }
+   .links span {
+    color: white !important;
+    cursor: pointer;
+
+   }
+   .icon-hover:hover{
+    color:#149ddd !important; 
+   }
+
+     
+   
+   
