@@ -9,7 +9,7 @@
     /* width: 100%; */
     /*height: 100%; */
     background-repeat: no-repeat; 
-    width: 1200px;  
+    /* width: 1200px;   */
     height: 100vh;
     /* background: url(../img/hero-bg.jpg) top center; */
     background-size: cover;
@@ -23,8 +23,6 @@
     font-size:40px;
     font-weight: bold;
     /* margin-left: 10px; */
-    
-   
     cursor: pointer;
     
 
@@ -42,17 +40,22 @@ span.text {
 
 }
 .content-background {
-    margin-left: 100px;
+    margin-left: 180px;
+
 
 }
 .background .download-cv{
     border: 2px solid #149ddd ;
     color:white !important ;
     font-size: 18px;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.5s;
+    
 }
 .background .download-cv:hover{
    color:  #149ddd !important;
    
    background-color: white;
    color:  #149ddd !important;
+   border: none !important;
 }

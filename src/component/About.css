@@ -1,0 +1,46 @@
+.about-page{
+    background-color: white !important;
+    margin-left: 180px;
+    /* height: 100vh; */
+
+}
+.about-page h1{
+  
+    width:fit-content;
+    font-weight: bold;
+    font-size: 31px;
+    color: #173b6c;
+    margin-bottom: 5px;
+   
+}
+.about-page .title{
+
+    /* margin-left: 90px; */
+    width:60px;
+    border-bottom: 3px solid #149ddd ;
+}
+.content-about p{
+    font-size: 17px;
+    line-height: 2;
+ }
+ .icon-detalis{
+    color:#149ddd;
+    font-size: 17px !important;
+
+ }
+ .detlais-personal span {
+    font-size: 17px;
+    font-weight: bold;
+    
+ }
+ .detalis{
+    /* display: none; */
+    /* transform: scaleX(0); 
+    animation: animate 2s 0.2s  forwards; */
+ }
+ @keyframes animate {
+    100% {
+        /* display: block; */
+      transform: scaleX(1); 
+    }
+  }

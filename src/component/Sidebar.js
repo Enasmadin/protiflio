@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -44,7 +44,7 @@ const Sidebar = () => {
                    <NavLink to="/about" className='link-one'> <PersonIcon  className='icon-hover' activeclassname="active"/>   <span>About</span> </NavLink>    
                   </li>
                   <li>
-                   <NavLink to="/project" className='link-one'> <AppsIcon  className='icon-hover' activeclassname="active"/>  <span>Project</span>    </NavLink>  
+                   <NavLink to="/projects" className='link-one'> <AppsIcon  className='icon-hover' activeclassname="active"/>  <span>Project</span>    </NavLink>  
                   </li>
                  </ul>
               </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
+import DownloadIcon from '@mui/icons-material/Download';
 const Home = () => {
   const [text, setText] = useState("");
 
@@ -34,7 +35,7 @@ const downloadCV = () => {
                <small> Enas </small>   Madina
           </p>
           <p>  Iam  <span className='text'>{text} </span> </p>
-          <button className='btn download-cv mt-4' onClick={downloadCV}>  download My cv </button>
+          <button className='btn download-cv mt-4' onClick={downloadCV}>  download My cv <DownloadIcon/> </button>
         </div>
           
       </div>
