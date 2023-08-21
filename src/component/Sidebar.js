@@ -11,6 +11,7 @@ import PersonIcon from '@mui/icons-material/Person';
  import personal from "../imag/personal.jpg";
  import AppsIcon from '@mui/icons-material/Apps';
 import './sidebar.css';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 
 const Sidebar = () => {
   return (
@@ -42,6 +43,9 @@ const Sidebar = () => {
                   </li>
                   <li>
                    <NavLink to="/about" className='link-one'> <PersonIcon  className='icon-hover' activeclassname="active"/>   <span>About</span> </NavLink>    
+                  </li>
+                  <li>
+                   <NavLink to="/skill" className='link-one'> <PsychologyIcon  className='icon-hover' activeclassname="active"/>  <span> Skills </span>    </NavLink>  
                   </li>
                   <li>
                    <NavLink to="/projects" className='link-one'> <AppsIcon  className='icon-hover' activeclassname="active"/>  <span>Project</span>    </NavLink>  

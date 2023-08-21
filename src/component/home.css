@@ -1,8 +1,9 @@
 .AppHome{
    width: 100%;
-   height: 100%;
+   /* height: 100%; */
    display: block;
     position: relative;
+    height:100vh !important ;
 }
 .background{
     background-image: url(../imag/background.jpg) ;
