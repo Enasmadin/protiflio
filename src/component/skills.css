@@ -1,7 +1,13 @@
+.skills-all{
+    background: #f5f8fd !important;
+}
+
 .skills-page{
-    background-color: white !important;
-    margin-left: 180px;
-     /* height: 100vh;  */
+  
+    
+    height: 474px; 
+   
+  
 
 }
 
@@ -11,17 +17,21 @@
     font-weight: bold;
     font-size: 31px;
     color: #173b6c;
-    margin-bottom: 5px;
+   
    
 }
 .skills-page .title{
 
-    /* margin-left: 90px; */
+   
     width:60px;
     border-bottom: 3px solid #149ddd ;
+    margin-top: 70px;
 }
 .skill-content-page p{
     color: black;
     font-size: 17px;
     line-height: 2;
+}
+.skill-content-page{
+    padding: 0px 30px;
 }

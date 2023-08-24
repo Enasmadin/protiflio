@@ -6,6 +6,8 @@ import About from './component/About';
 import Sidebar from './component/Sidebar';
 import Project from './component/Project';
 import Skills from './component/Skills';
+import Contect from './component/Contect';
+
 
 function App() {
   return (
@@ -15,29 +17,22 @@ function App() {
      <div className="sidebar-app">
      <Sidebar />
      </div>
-     <div className='d-flex flex-column'>
-       <div>
+     <div className='d-flex flex-column w-100'>
+  
        <Routes>
         <Route  path="/"  element={< Home/>}/>
         <Route  path="/about"  element={<About/>}/>
         <Route  path="/skill"  element={<Skills/>}/>
-        <Route  path="/projects"  element={<Project/>}/>
+       <Route  path="/projects"  element={<Project/>}/> 
+       <Route  path="/contect"  element={<Contect/>}/> 
+
+     
        </Routes>
-       {/* <About/>
-       <Project/> */}
-       </div>
-       <div>
-          
-          <About />
-          <Skills />
-          <Project />
-        </div>
-        </div>
+      </div>
     </Router>
  
   </div>
   
-
   </>
   );
 }

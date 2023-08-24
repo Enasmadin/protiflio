@@ -10,7 +10,11 @@ const About = () => {
     Aos.init({duration:2000});
   },[])
   return (
+    <div   className='container'>
+
+   
     <div  className="about-page ">
+      
       <div   className='title'>
       <h1 className='mt-4'>  About  </h1>
       </div>
@@ -54,6 +58,7 @@ const About = () => {
         </div>
       </div>
 
+    </div>
     </div>
   )
 }

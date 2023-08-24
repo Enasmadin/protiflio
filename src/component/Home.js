@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
 import DownloadIcon from '@mui/icons-material/Download';
+import About from './About';
+import Project from './Project';
+import Skills from './Skills';
+import Contect from './Contect';
 const Home = () => {
   const [text, setText] = useState("");
 
@@ -28,7 +32,7 @@ const downloadCV = () => {
   downloadLink.click();
 };
   return (
-    <div className="AppHome">
+    <div className="AppHome d-flex flex-column">
       <div  className='background'>
         <div className='content-background'>
            <p>
@@ -39,6 +43,10 @@ const downloadCV = () => {
         </div>
           
       </div>
+        <About/>
+       <Skills />
+       <Project/> 
+       < Contect/>
  
 
     </div>

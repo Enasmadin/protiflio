@@ -1,5 +1,9 @@
 .sidebar-app{
-  width: 300px !important;
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  
+  z-index: 8888;
 }
 nav.navbar.navbar.navbar-expand-lg.navbar-light {
     position: fixed !important;

@@ -8,11 +8,12 @@ const Skills = () => {
         Aos.init({duration:2000});
       },[])
   return (
-    <div className='skills-page'>
+    <div   className='skills-all'>
+    <div className='skills-page  container'>
          <div   className='title'>
          <h1 className='mt-4'>  Skills   </h1>
-    </div>
-    <div  className='skill-content-page mt-4'>
+       </div>
+    <div  className='skill-content-page mt-4'> 
         <p   className='description'>
         I have experience with them.    
         </p>
@@ -23,8 +24,8 @@ const Skills = () => {
               <span> HTML </span>
               </p>
               <p className="col-6 ">
-              <ArrowForwardIosIcon className='icon-detalis'/> 
-              <span> ReactJS & Redux  & ReduxTolkit  </span>
+              {/* <ArrowForwardIosIcon className='icon-detalis'/> 
+              <span> ReactJS & Redux  & ReduxTolkit  </span> */}
               </p>
               <p className="col-6 ">
               <ArrowForwardIosIcon className='icon-detalis'/> 
@@ -56,8 +57,10 @@ const Skills = () => {
               
             </div>
           </div>
+          <div  className="row"></div>
 
 
+    </div>
     </div>
     </div>
   )

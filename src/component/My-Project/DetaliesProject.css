@@ -1,0 +1,46 @@
+.card-all{
+    height: 200px;
+    transition: 0.7s;
+}
+.content-image{
+    width: 100% !important;
+    height: 200px !important;
+}
+.content-image img {
+    width: 100% !important;
+    height: 100% !important;
+    /* object-fit: contain; */
+}
+.links-project{
+    /* display: none !important; */
+    opacity: 0;
+}
+.card-all:hover .links-project {
+   /* display: block !important; */
+   position: absolute;
+   opacity: 1;
+   bottom: 0px !important;
+   background: #3d3db1;
+   width: 100%;
+   color: #fff;
+   /* font-size: 28px; */
+   text-align: center;
+   background: rgba(20, 157, 221, 0.75);
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.m-2.card-all.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    position: relative !important;
+}
+.links-project .github-icon{
+    color: white !important;
+}
+
+.links-project a:hover{
+   /* background-color: #3d3db1; */
+   background: rgb(16 152 215);
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+   
+     padding: 0px !important; 
+}

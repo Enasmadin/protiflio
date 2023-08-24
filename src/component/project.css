@@ -1,0 +1,28 @@
+.project-page h1{
+  
+    width:fit-content;
+    font-weight: bold;
+    font-size: 31px;
+    color: #173b6c;
+    /* margin-bottom: 5px; */
+   
+}
+.project-page .title{
+
+    /* margin-left: 90px; */
+    width:60px;
+    border-bottom: 3px solid #149ddd ;
+    margin-top: 70px;
+}
+.main-protiflio-routing ul{
+ 
+  width: 600px;
+  background: #f5f8fd;
+  padding: 10px 20px !important;
+  border-radius: 16px;
+}
+.route-project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
