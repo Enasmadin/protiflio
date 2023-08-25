@@ -7,6 +7,8 @@ import Sidebar from './component/Sidebar';
 import Project from './component/Project';
 import Skills from './component/Skills';
 import Contect from './component/Contect';
+// import{WrappedMap} from"./component/Contect"
+
 
 
 function App() {
@@ -30,6 +32,16 @@ function App() {
        </Routes>
       </div>
     </Router>
+    <div>
+    {/* <div style={{ width: '100vw', height: '100vh' }}>
+      <WrappedMap
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY`}
+        loadingElement={<div style={{ height: '100%' }} />}
+        containerElement={<div style={{ height: '100%' }} />}
+        mapElement={<div style={{ height: '100%' }} />}
+      />
+    </div> */}
+    </div>
  
   </div>
   

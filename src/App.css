@@ -1,7 +1,7 @@
 .sidebar-app{
   position: fixed;
   top: 50%;
-  right: 30px;
+  right: 10px;
   
   z-index: 8888;
 }

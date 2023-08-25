@@ -5,8 +5,34 @@ import About from './About';
 import Project from './Project';
 import Skills from './Skills';
 import Contect from './Contect';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const [text, setText] = useState("");
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if ((window.pageYOffset) >= 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
 
 useEffect(() => {
   const message = "front end developer";
@@ -14,7 +40,7 @@ useEffect(() => {
   function type() {
     for (let i = 0; i <= message.length; i++) {
       setTimeout(() => {
-        // setText(text + message[i++]);
+        
         setText(message.substring(0, i));
       }, i * 200);
     }
@@ -32,7 +58,10 @@ const downloadCV = () => {
   downloadLink.click();
 };
   return (
-    <div className="AppHome d-flex flex-column">
+
+   
+    <div className="AppHome d-flex flex-column ">
+      
       <div  className='background'>
         <div className='content-background'>
            <p>
@@ -47,9 +76,14 @@ const downloadCV = () => {
        <Skills />
        <Project/> 
        < Contect/>
- 
+    
 
-    </div>
+
+       <span  className='sroll-button' >
+       <ArrowUpwardIcon  className={`scroll-button ${isVisible ? 'show' : ''}`} onClick={scrollToTop}/> 
+       </span>
+
+      </div>
   )
 }
 

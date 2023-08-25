@@ -23,10 +23,7 @@ const Skills = () => {
               <ArrowForwardIosIcon className='icon-detalis'/> 
               <span> HTML </span>
               </p>
-              <p className="col-6 ">
-              {/* <ArrowForwardIosIcon className='icon-detalis'/> 
-              <span> ReactJS & Redux  & ReduxTolkit  </span> */}
-              </p>
+            
               <p className="col-6 ">
               <ArrowForwardIosIcon className='icon-detalis'/> 
               <span> CSS & SASS</span> 

@@ -6,6 +6,7 @@
 .contact-us-page{
     background: #f5f8fd !important;  
     padding: 1px 0px 30px;
+  
     
 }
     .content-link{
@@ -39,9 +40,13 @@
     -moz-box-shadow: 0px 0px 6px 2px  rgb(0 0 0 / 3%);
   
 }
+.contact-us-content .contac-links {
+    height: fit-content !important;
+}
 .send-message form , .contact-us-content .contac-links{
     padding: 30px 20px;
 }
+
 
 .contact-us-page h1{
   
@@ -83,4 +88,13 @@
 .contact-us-page  label{
     font-size: 17px !important;
 }
+.map{
+    width: 200px !important;
+}
+.fade.succes-alert.alert.alert-success.show {
+    position: fixed;
+    top: 0;
+    right: 5px;
+}
+
 

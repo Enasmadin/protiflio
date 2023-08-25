@@ -1,8 +1,8 @@
 .about-page{
     background-color: white !important;
-    /* margin-left: 180px; */
+    
      height: 500px;  
-    /* height: 100vh;    */
+   
 
 }
 .about-page h1{
@@ -16,7 +16,7 @@
 }
 .about-page .title{
 
-    /* margin-left: 90px; */
+
     width:60px;
     border-bottom: 3px solid #149ddd ;
     margin-top: 70px;
@@ -37,14 +37,12 @@
     
  }
  .detalis{
-    /* display: none; */
-    /* transform: scaleX(0); 
-    animation: animate 2s 0.2s  forwards; */
+ 
     margin-top: 37px;
  }
  @keyframes animate {
     100% {
-        /* display: block; */
+       
       transform: scaleX(1); 
     }
   }
