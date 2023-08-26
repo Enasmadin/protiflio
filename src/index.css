@@ -1,14 +1,14 @@
-body {
+ body {
   margin: 0;
   font-family: "Poppins", sans-serif !important;
    padding: 0;
    margin: 0;
    overflow-y: scroll;
    min-height: 100vh;
-   scroll-behavior: smooth;
+   /* scroll-behavior: smooth;
    text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 
 }
 
@@ -31,18 +31,7 @@ ul , ol{
     
   }
 } */
-/* @media (max-width: 328px){
-  #root{
-    width:530px !important;
-    
-  }
-}
- @media  (min-width:329px) and (max-width: 920px){
-  #root{
-    width:922px !important;
-    
-  }
-}  */
+
 
 
 /* @media  (min-width:380) and (max-width:497px){
@@ -50,6 +39,8 @@ ul , ol{
     width: fit-content !important;
     
   } */
+
+ 
 
 
 
