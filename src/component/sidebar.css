@@ -6,20 +6,19 @@
    z-index: 8888;
   
 }
-/* @media(max-width:768px){
+@media(max-width:768px){
    .link-page {  position: fixed;
       
       left: 50px;
-
      
 }}
 @media (min-width:769px) and (max-width:1200px){
    .link-page {  
    
       
-      left: 300px;
+      left: 150px;
      
-}} */
+}}
 
    .links .link-one{
     text-decoration: none !important;

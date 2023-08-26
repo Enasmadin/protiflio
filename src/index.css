@@ -25,12 +25,31 @@ ul , ol{
   margin: 0 !important;
   padding: 0  !important;
 }
-@media (max-width:497px){
+/* @media (max-width:px){
   #root{
-    width: fit-content !important;
+    width: 400px !important;
+    
+  }
+} */
+@media (max-width: 328px){
+  #root{
+    width:530px !important;
     
   }
 }
+ @media  (min-width:329px) and (max-width: 920px){
+  #root{
+    width:922px !important;
+    
+  }
+} 
+
+/* @media  (min-width:380) and (max-width:497px){
+  #root{
+    width: fit-content !important;
+    
+  } */
+
 
 
 

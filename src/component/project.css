@@ -26,6 +26,14 @@
     display: flex;
     justify-content: center;
 }
+@media(max-width:631px){
+    .route-project{
+        width:488px
+       
+    }
+   
+}
+
 @media (max-width:550px){
     .tabs{
         padding: 10px 1px !important;
