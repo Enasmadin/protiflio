@@ -36,12 +36,12 @@ const Project = () => {
        <Tabs defaultValue={0}>
        <div  className='route-project mt-4'>
           <StyledTabsList>
-            <StyledTab value={0}>All</StyledTab>
-            <StyledTab value={1}> SASS</StyledTab>
-            <StyledTab value={2}> JS</StyledTab>
-            <StyledTab value={3}> Jquary</StyledTab>
-            <StyledTab value={4}> ReactJS</StyledTab>
-            <StyledTab value={5}> Angular </StyledTab>
+            <StyledTab value={0} className="tabs">All</StyledTab >
+            <StyledTab value={1} className="tabs"> SASS</StyledTab>
+            <StyledTab value={2} className="tabs"> JS</StyledTab>
+            <StyledTab value={3} className="tabs"> Jquary</StyledTab>
+            <StyledTab value={4} className="tabs"> ReactJS</StyledTab>
+            <StyledTab value={5} className="tabs"> Angular </StyledTab>
           
           </StyledTabsList>
           </div>
@@ -49,7 +49,7 @@ const Project = () => {
           <div  className="row ">
           {dataProjects.map((alldata)=>(
            
-           <div  className=' col-sm-12 col-md-4 col-lg-4' key={alldata.id}>
+           <div  className=' small-card col-sm-12 col-md-4 col-lg-4' key={alldata.id}>
               <DetaliesProject hrefDemo={alldata['Link-demo']} herfGit={alldata['link-github']} imgSrc={alldata.image} className="col-md-1"  /> 
             
           </div> 
@@ -62,7 +62,7 @@ const Project = () => {
           <div  className="row ">
           {sassProject.map((dataSass)=>(
            
-           <div  className=' col-sm-12 col-md-4 col-lg-4' key={dataSass.id}>
+           <div  className=' small-card  col-sm-12 col-md-4 col-lg-4' key={dataSass.id}>
               <DetaliesProject hrefDemo={dataSass['Link-demo']} herfGit={dataSass['link-github']} imgSrc={dataSass.image} className="col-md-1"  /> 
             
           </div> 
@@ -74,7 +74,7 @@ const Project = () => {
           <div  className="row ">
           {jsProject.map((dataJs)=>(
            
-           <div  className=' col-sm-12 col-md-4 col-lg-4' key={dataJs.id}>
+           <div  className=' small-card col-sm-12 col-md-4 col-lg-4' key={dataJs.id}>
               <DetaliesProject hrefDemo={dataJs['Link-demo']} herfGit={dataJs['link-github']} imgSrc={dataJs.image} className="col-md-1"  /> 
             
           </div> 
@@ -87,7 +87,7 @@ const Project = () => {
           <div  className="row ">
           {jquaryProject.map((dataJquary)=>(
            
-           <div  className=' col-sm-12 col-md-4 col-lg-4' key={dataJquary.id}>
+           <div  className='small-card  col-sm-12 col-md-4 col-lg-4' key={dataJquary.id}>
               <DetaliesProject hrefDemo={dataJquary['Link-demo']} herfGit={dataJquary['link-github']} imgSrc={dataJquary.image} className="col-md-1"  /> 
             
           </div> 
@@ -99,7 +99,7 @@ const Project = () => {
           <div  className="row ">
           {reactProject.map((dataReact)=>(
            
-           <div  className=' col-sm-12 col-md-4 col-lg-4' key={dataReact.id}>
+           <div  className='small-card col-sm-12 col-md-4 col-lg-4' key={dataReact.id}>
               <DetaliesProject hrefDemo={dataReact['Link-demo']} herfGit={dataReact['link-github']} imgSrc={dataReact.image} className="col-md-1"  /> 
           </div> 
           ))}
@@ -110,7 +110,7 @@ const Project = () => {
           <div  className="row ">
           {AngularProject.map((dataAngular)=>(
            
-           <div  className=' col-sm-12 col-md-4 col-lg-4' key={dataAngular.id}>
+           <div  className=' small-card col-sm-12 col-md-4 col-lg-4' key={dataAngular.id}>
               <DetaliesProject hrefDemo={dataAngular['Link-demo']} herfGit={dataAngular['link-github']} imgSrc={dataAngular.image} className="col-md-1"  /> 
             
           </div> 
@@ -208,7 +208,8 @@ const StyledTabsList = styled(TabsList)(
   min-width: 400px;
   background-color: ${blue[500]};
   border-radius: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  margin-top:16px;
   display: flex;
   align-items: center;
   justify-content: center;

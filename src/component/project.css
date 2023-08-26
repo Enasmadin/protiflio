@@ -26,3 +26,16 @@
     display: flex;
     justify-content: center;
 }
+@media (max-width:550px){
+    .tabs{
+        padding: 10px 1px !important;
+        font-size: 15px !important;
+    }
+}
+@media(max-width:768px){
+    .small-card{
+       display: flex;
+       justify-content: center;
+    }
+}
+

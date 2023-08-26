@@ -51,16 +51,7 @@ const Contect = () => {
      setMessage('');
 
   }
- 
-  // const mapContainerStyle = {
-  //   width: '100%',
-  //   height: '200px',
-  // };
 
-  // const center = {
-  //   lat: 37.7749, // Latitude of the center point
-  //   lng: -122.4194, // Longitude of the center point
-  // };
   return (
     <>
     {
@@ -71,13 +62,13 @@ const Contect = () => {
    
    
     <div   className='all-content'>
-    <div className='contact-us-page '>
+    <div className='contact-us-page  w-100'>
         <div   className='container'>
         <div  className='title'>
          <h1 className='mt-4'>  Contact   </h1>
        </div>
        <div  className='contact-us-content  mt-4 row'>
-        <div   className='contac-links col-md-4'>
+        <div   className='contac-links col-md-5'>
             <div   className='content-link'>
                 <ul>
                     <li className='d-flex align-items-center mb-2'>  <a   href="https://api.whatsapp.com/send?phone=01097499806" className='mx-2'>  <WhatsAppIcon />  </a>   <span>   01097499806</span>  </li>
@@ -87,21 +78,13 @@ const Contect = () => {
                 </ul>
               
             </div>
-            {/* <div  className='map'>
-               
-               <LoadScript googleMapsApiKey="AIzaSyDRX0D21tjCpNmpABQp8bnfNyA99pscQrM">
-               <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={10}>
-                 <Marker position={center} />
-               </GoogleMap>
-               </LoadScript>
- 
-             </div> */}
+    
             <div>
 
             </div>
 
         </div>
-      <div   className='send-message col-md-6 offset-md-2'>
+      <div   className='send-message col-md-6 offset-md-1'>
       <Form onSubmit={handleSubmit}>
       <Row className="mb-4">
       <Form.Group as={Col} controlId="formGridPassword">

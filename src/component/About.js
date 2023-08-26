@@ -29,23 +29,23 @@ const About = () => {
           </p>
           <div className='detlais-personal'>
             <div  className="row">
-              <p className="col-6 ">
+              <p className="col-md-6 ">
               <ArrowForwardIosIcon className='icon-detalis'/> 
               <span> Birthday : </span>
                  14  Apr 1998
               </p>
-              <p className="col-6 ">
+              <p className="col-md-6 ">
               <ArrowForwardIosIcon className='icon-detalis'/> 
               <span> Age : </span> 
                    25 
                
               </p>
-              <p className="col-6 ">
+              <p className="col-md-6 ">
               <ArrowForwardIosIcon className='icon-detalis'/> 
               <span> Phone: </span>
                   01097499806
               </p>
-              <p className="col-6 ">
+              <p className="col-md-6 ">
               <ArrowForwardIosIcon className='icon-detalis'/> 
               <span> City: </span>
                  Al-Mansoura

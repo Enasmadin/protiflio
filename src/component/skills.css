@@ -1,15 +1,14 @@
 .skills-all{
     background: #f5f8fd !important;
-}
-
-.skills-page{
-  
-    
-    height: 474px; 
    
-  
-
 }
+@media screen {
+    .skills-all{ 
+        padding-bottom: 50px;
+     }
+}
+
+
 
 .skills-page h1{
   
@@ -35,3 +34,7 @@
 .skill-content-page{
     padding: 0px 30px;
 }
+
+
+   
+

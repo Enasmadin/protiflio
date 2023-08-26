@@ -81,14 +81,14 @@ const data = [
         "image": "../../images/Angular2.png"
       },
       {
-        "id": 11,
+        "id": 12,
         "catogray": "Angular",
         "Link-demo":"",
         "link-github": "https://github.com/Enasmadin/e-commerce-angular-user",
          "image": "../../images/Angular3.png"
       },
       {
-        "id": 12,
+        "id": 13,
         "catogray": "Angular",
         "Link-demo":"",
         "link-github": "https://github.com/Enasmadin/admin_ecommerce",

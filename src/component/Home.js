@@ -5,6 +5,7 @@ import About from './About';
 import Project from './Project';
 import Skills from './Skills';
 import Contect from './Contect';
+import  Sidebar  from "./Sidebar"
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,9 +61,13 @@ const downloadCV = () => {
   return (
 
    
-    <div className="AppHome d-flex flex-column ">
-      
+    < >
+      <div>
       <div  className='background'>
+        <div className= "sidebar-app">
+        <Sidebar />
+        </div>
+     
         <div className='content-background'>
            <p>
                <small> Enas </small>   Madina
@@ -76,14 +81,11 @@ const downloadCV = () => {
        <Skills />
        <Project/> 
        < Contect/>
-    
-
-
        <span  className='sroll-button' >
        <ArrowUpwardIcon  className={`scroll-button ${isVisible ? 'show' : ''}`} onClick={scrollToTop}/> 
        </span>
-
-      </div>
+       </div>
+      </>
   )
 }
 
