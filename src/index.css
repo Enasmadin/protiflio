@@ -28,6 +28,7 @@ ul , ol{
 @media (max-width:497px){
   #root{
     width: fit-content !important;
+    
   }
 }
 
