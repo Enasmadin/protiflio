@@ -1,9 +1,5 @@
 
-.sidebar-app{
-  position: fixed;
-  right: 30px;
-   z-index: 99999 !important;
-}
+
 .background{
     background-image: url(../../public/images/personal.jpg) ;
      width: 100%; 
