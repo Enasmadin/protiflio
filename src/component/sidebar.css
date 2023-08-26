@@ -9,14 +9,14 @@
 @media(max-width:768px){
    .link-page {  position: fixed;
       
-      /* right: 50px; */
+      right: 50px;
      
 }}
 @media (min-width:769px) and (max-width:1200px){
    .link-page {  
    
       
-      /* right: 150px; */
+      right: 150px;
      
 }}
 
