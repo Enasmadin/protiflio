@@ -11,8 +11,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 import Alert from 'react-bootstrap/Alert';
 import Sidebar from './Sidebar';
+import { useEffect } from 'react';
+import Aos from 'aos';
 
 const Contect = () => {
+
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  },[])
   const [name,setName]= useState("");
   const [email,setEmail]= useState("");
   const [subject,setSubject]=useState("");
@@ -90,7 +96,7 @@ const Contect = () => {
         <div  className='title'>
          <h1 className='mt-4'>  Contact   </h1>
        </div>
-       <div  className='contact-us-content  mt-4 row'>
+       <div  className='contact-us-content  mt-4 row  '  data-aos="zoom-in-up" aos-duration="500"> 
         <div   className='contac-links col-md-5'>
             <div   className='content-link'>
                 <ul>

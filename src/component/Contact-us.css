@@ -1,11 +1,12 @@
 
 .all-content{
     position: relative;
-    height: 100vh;
+  
 }
 .contact-us-page{
     background: #f5f8fd !important;  
     padding: 1px 0px 30px;
+    height: 100vh;
   
     
 }

@@ -8,15 +8,20 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 
 import "./DetaliesProject.css";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { useEffect } from 'react';
+import Aos from 'aos';
 
 
 
 const DetaliesProject = (props) => {
-  
+    /// 
+    useEffect(()=>{
+      Aos.init({duration:2000});
+    },[])
   return (
    
      
-      <Card sx={{ maxWidth: 345 }} className='m-2 card-all'>
+      <Card sx={{ maxWidth: 345 }} className='m-2 card-all' data-aos="slide-right" >
      
       <CardMedia className='content-image'>
         <img    src={props.imgSrc} alt="recipe thumbnail"/>

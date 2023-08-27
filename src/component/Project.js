@@ -9,6 +9,8 @@ import { Tab, tabClasses } from '@mui/base/Tab';
 import DetaliesProject from './My-Project/DetaliesProject';
 import data  from "../data/data"
 import Sidebar from "./Sidebar";
+import { useEffect } from "react";
+import Aos from "aos";
 
 
 const Project = () => {
@@ -22,6 +24,7 @@ const Project = () => {
   const jquaryProject = dataProjects.filter(item => item.catogray === "Jquary");
   const reactProject = dataProjects.filter(item => item.catogray === "React");
   const AngularProject = dataProjects.filter(item => item.catogray === "Angular");
+
  
 
   return (
@@ -40,7 +43,7 @@ const Project = () => {
        <Tabs defaultValue={0}>
        <div  className='route-project mt-4'>
           <StyledTabsList>
-            <StyledTab value={0} className="tabs">All</StyledTab >
+            <StyledTab value={0} className="tabs"  >All</StyledTab >
             <StyledTab value={1} className="tabs"> SASS</StyledTab>
             <StyledTab value={2} className="tabs"> JS</StyledTab>
             <StyledTab value={3} className="tabs"> Jquary</StyledTab>
@@ -49,7 +52,7 @@ const Project = () => {
           
           </StyledTabsList>
           </div>
-          <StyledTabPanel value={0}> 
+          <StyledTabPanel value={0} > 
           <div  className="row ">
           {dataProjects.map((alldata)=>(
            
