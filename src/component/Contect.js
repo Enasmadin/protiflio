@@ -84,8 +84,7 @@ const Contect = () => {
      
     }
     </div>
-   
-   
+  
    
     <div   className='all-content'>
     <div className='contact-us-page  w-100'>
