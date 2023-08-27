@@ -46,3 +46,18 @@
       transform: scaleX(1); 
     }
   }
+
+
+  @media(max-width:768px){
+  .about-sidebar .link-page {  position: fixed;
+      
+      right: 160px !important;
+     
+}}
+@media (min-width:769px) and (max-width:1200px){
+   .link-page {  
+   
+      
+      right: 200px !important;
+     
+}}

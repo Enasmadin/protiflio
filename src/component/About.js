@@ -10,16 +10,13 @@ const About = () => {
   useEffect(()=>{
     Aos.init({duration:2000});
   },[])
-  
+
   return (
     <div   className='container'>
-
-   
     <div  className="about-page ">
-    <div className= "sidebar-app">
+    <div className= "sidebar-app about-sidebar">
         <Sidebar />
-        </div>
-      
+     </div>
       <div   className='title'>
       <h1 className='mt-4'>  About  </h1>
       </div>

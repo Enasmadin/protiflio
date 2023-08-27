@@ -3,16 +3,17 @@ import './App.css';
 import {BrowserRouter as Router , Routes ,Route} from "react-router-dom";
 import Home from './component/Home';
 import About from './component/About';
-// import Sidebar from './component/Sidebar';
 import Project from './component/Project';
 import Skills from './component/Skills';
 import Contect from './component/Contect';
-// import{WrappedMap} from"./component/Contect"
+
 
 function App() {
   return (
     <>
+   
     <Router>
+    
        <Routes>
         <Route  path="/"  element={< Home/>}/>
         <Route  path="/about"  element={<About/>}/>
