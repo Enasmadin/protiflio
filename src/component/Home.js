@@ -62,8 +62,8 @@ const downloadCV = () => {
 
    
     < >
-     
-      <div  className='background-home'>
+      <div>
+      <div  className='background'>
         <div className= "sidebar-app">
         <Sidebar />
         </div>
@@ -80,11 +80,11 @@ const downloadCV = () => {
         {/* <About/>
        <Skills />
        <Project/> 
-       < Contect/>
+       < Contect/> */}
        <span  className='sroll-button' >
        <ArrowUpwardIcon  className={`scroll-button ${isVisible ? 'show' : ''}`} onClick={scrollToTop}/> 
-       </span> */}
-       
+       </span>
+       </div>
       </>
   )
 }

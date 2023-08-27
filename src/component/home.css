@@ -1,6 +1,6 @@
 
 
-.background-home{
+.background{
     background-image: url(../../public/images/personal.jpg) ;
      width: 100%; 
   
@@ -85,3 +85,4 @@ span.text {
     left:10px;
     cursor: pointer;
 }
+
