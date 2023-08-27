@@ -4,6 +4,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 
 import "./About.css";
+import Sidebar from './Sidebar';
 
 const About = () => {
   useEffect(()=>{
@@ -14,6 +15,9 @@ const About = () => {
 
    
     <div  className="about-page ">
+    <div className= "sidebar-app">
+        <Sidebar />
+        </div>
       
       <div   className='title'>
       <h1 className='mt-4'>  About  </h1>

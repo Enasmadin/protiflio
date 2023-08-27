@@ -26,9 +26,11 @@
     display: flex;
     justify-content: center;
 }
+
+
 @media(max-width:631px){
     .route-project{
-        width:488px
+     width:344px !important ;
        
     }
    
@@ -45,5 +47,9 @@
        display: flex;
        justify-content: center;
     }
+}
+.css-16z9l0j {
+    min-width: 200px !important;
+ 
 }
 

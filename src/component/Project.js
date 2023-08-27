@@ -8,6 +8,7 @@ import { buttonClasses } from '@mui/base/Button';
 import { Tab, tabClasses } from '@mui/base/Tab';
 import DetaliesProject from './My-Project/DetaliesProject';
 import data  from "../data/data"
+import Sidebar from "./Sidebar";
 
 
 const Project = () => {
@@ -26,6 +27,9 @@ const Project = () => {
   return (
 
      <div className='project-page container'> 
+      <div className= "sidebar-app">
+        <Sidebar />
+        </div>
      <div   className='title'>
          <h1 className='mt-4'>  Projects   </h1>
        </div>

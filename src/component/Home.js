@@ -81,9 +81,9 @@ const downloadCV = () => {
        <Skills />
        <Project/> 
        < Contect/> */}
-       <span  className='sroll-button' >
+       {/* <span  className='sroll-button' >
        <ArrowUpwardIcon  className={`scroll-button ${isVisible ? 'show' : ''}`} onClick={scrollToTop}/> 
-       </span>
+       </span> */}
        </div>
       </>
   )

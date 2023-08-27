@@ -10,6 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 import Alert from 'react-bootstrap/Alert';
+import Sidebar from './Sidebar';
 
 const Contect = () => {
   const [name,setName]= useState("");
@@ -64,6 +65,9 @@ const Contect = () => {
     <div   className='all-content'>
     <div className='contact-us-page  w-100'>
         <div   className='container'>
+        <div className= "sidebar-app">
+        <Sidebar />
+        </div>
         <div  className='title'>
          <h1 className='mt-4'>  Contact   </h1>
        </div>
