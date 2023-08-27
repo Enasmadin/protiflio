@@ -3,6 +3,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import './skills.css';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import Sidebar from './Sidebar';
 const Skills = () => {
     useEffect(()=>{
         Aos.init({duration:2000});
@@ -10,6 +11,9 @@ const Skills = () => {
   return (
     <div   className='skills-all'>
     <div className='skills-page  container'>
+    <div className= "sidebar-app">
+        <Sidebar />
+        </div>
          <div   className='title pt-4'>
          <h1 className='mt-4'>  Skills   </h1>
        </div>

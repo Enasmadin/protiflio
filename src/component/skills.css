@@ -1,13 +1,10 @@
 .skills-all{
     background: #f5f8fd !important;
     height: 100vh;
+    margin-top: -70px;
    
 }
-@media screen {
-    .skills-all{ 
-        padding-bottom: 50px;
-     }
-}
+
 
 
 

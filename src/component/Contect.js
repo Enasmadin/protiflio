@@ -18,6 +18,7 @@ const Contect = () => {
   const [subject,setSubject]=useState("");
   const [message,setMessage]=useState("");
   const [succes,setSucces]= useState(false);
+  const [falid,setFalid]= useState(false);
   
   const handleNameChange = (e)=> {
    setName(e.target.value)
@@ -33,33 +34,51 @@ const Contect = () => {
    }
   const  handleSubmit  = (e)=>{
     e.preventDefault();
-     // Save data to localStorage
-     localStorage.setItem('name', name);
-     localStorage.setItem('email', email);
-     localStorage.setItem('message', message);
-     setSucces(true);
+     
+  if(name && email && subject && message &&  succes !== null ) {
+    // Save data to localStorage
+    
+    localStorage.setItem('name', name);
+    localStorage.setItem('email', email);
+    localStorage.setItem('message', message);
+    localStorage.setItem('subject', subject);
 
-     setTimeout(() => {
+ // Reset form fields 
+    setMessage('');
+    setName('');
+    setEmail('');
+    setSubject('');
+    
+    setSucces(true);
+    setTimeout(() => {
       setSucces (false);
     }, 1000);
-     
-     // Reset form fields
-
-
-     setName('');
-     setEmail('');
-     setSubject('');
-     setMessage('');
+  }
+  else{
+    setFalid(true);
+    setTimeout(() => {
+      setFalid(false);
+    }, 1000);
+  }
+    
 
   }
 
   return (
     <>
+    <div   className='all-alert'>
     {
-     succes &&  <Alert  variant='success' className='succes-alert'>  succes to add message  </Alert>
+     succes &&  <Alert  variant='success' className='alerts'>  succes to add message  </Alert>
         
      
     }
+    {
+      ( falid)  &&  <Alert  variant='warning' className='alerts'>    should enter all fileds  </Alert>
+        
+     
+    }
+    </div>
+   
    
    
     <div   className='all-content'>
@@ -107,9 +126,9 @@ const Contect = () => {
         <Form.Control placeholder="Enter subject"   value= {subject}  onChange={handleSubjectChange}  />
       </Form.Group>
 
-      <Form.Group className="mb-3" id="formGridCheckbox"  value ={message}  onChange={handleMessageChange}  >
+      <Form.Group className="mb-3" id="formGridCheckbox"   >
          <Form.Label> Message </Form.Label>
-        <Form.Control as="textarea" rows={8} />
+        <Form.Control as="textarea" rows={8} value ={message}  onChange={handleMessageChange} />
       </Form.Group>
         <div  className='d-flex w-100 justify-content-center '>
         <Button variant="primary" type="submit" className='px-4'>  

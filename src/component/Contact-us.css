@@ -1,6 +1,6 @@
 
 .all-content{
-    
+    position: relative;
     height: 100vh;
 }
 .contact-us-page{
@@ -97,10 +97,23 @@
 .map{
     width: 200px !important;
 }
-.fade.succes-alert.alert.alert-success.show {
+
+.fade.alerts.alert.alert-warning.show {
+    width: fit-content;
+    padding: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
-    right: 5px;
+    z-index: 9999;
+    margin-top: 10px;
+}
+.all-alert{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ 
 }
 
 
